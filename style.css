@@ -1,0 +1,226 @@
+@font-face {
+    font-family: fahadFont;
+    src: url('./Circular-Std-Book.ttf');
+}
+
+body {
+    font-family: 'fahadFont', sans-serif !important;
+    font-weight: 400;
+    color: #1F1F1F;
+}
+.form-check-label,.form-check-input{
+    cursor: pointer;
+
+}
+
+
+.form-control, .form-control:focus {
+    border-radius: 4px;
+    border: 1px solid #515260;
+    height: 3rem;
+    color: #151515;
+}
+
+.form-control:focus {
+    border-radius: 4px;
+    border: 2px solid #0157FF;
+    background-color: #e5eeff;
+
+    box-shadow: none;
+    /*box-shadow: 4px 4px 2px #00548A;*/
+}
+
+label, #breakdown label {
+    font-family: 'fahadFont', sans-serif !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tbody {
+    font-size: 18px;
+}
+
+
+.black {
+    color: black;
+}
+
+/*for input icons*/
+.input-icon {
+    position: relative;
+}
+
+.input-icon > i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+    color: #151515;
+}
+
+.input-icon > input {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.input-icon-right > i {
+    right: 0;
+}
+
+.input-icon-right > i.years {
+    right: 24px;
+}
+
+.input-icon-right > input {
+    padding-left: 10px;
+}
+
+h5 strong {
+    color: #00548A;
+}
+
+
+h3 {
+    color: #1F1F1F;
+    font-weight: bold;
+}
+
+h4 {
+    color: #1F1F1F;
+}
+
+
+/* Base button styling */
+.btn-dark {
+    background-color: #F87171; /* Use the provided color */
+    border: 1px solid #F87171;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state */
+.btn-dark:hover {
+    background-color: #e05b5b; /* Darker shade for hover */
+    border-color: #e05b5b;
+    color: white;
+}
+
+/* Focused state */
+.btn-dark:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(248, 113, 113, 0.7); /* Add a subtle shadow on focus */
+}
+
+/* Active state (on click) */
+.btn-dark:active {
+    background-color: #c94c4c; /* Even darker shade for active state */
+    border-color: #c94c4c;
+    color: white;
+    transform: scale(0.98); /* Slight scale down effect for a click response */
+}
+
+/* Disabled state */
+.btn-dark:disabled {
+    background-color: #fcb6b6;
+    border-color: #fcb6b6;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.blue {
+    color: #06B6D4;
+}
+.orange{
+    color: #F87171;
+}
+
+
+.bold {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+.table-bordered td {
+    border-bottom: 1px solid #515260;
+}
+#detailsTable.table-bordered td {
+   border: none;
+    border-bottom: 1px solid #515260;
+}
+
+.tooltip > .tooltip-inner {
+    text-align: left;
+    font-family: 'fahadFont', sans-serif !important;
+    padding: 10px;
+}
+
+#chart-2 {
+    max-height: 650px;
+    margin: 55px auto;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #ffffff !important;
+    /*color: #00548A !important;*/
+    background-color: #06B6D4 !important;
+    border-bottom: 3px solid #06B6D4;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+#advance {
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media all and (max-width: 768px) {
+    .table td {
+        font-size: 12px;
+    }
+
+    .table th {
+        font-size: 13px;
+    }
+
+    #arrow {
+        rotate: 90deg;
+        display: none;
+    }
+
+    #lastPaymentMonth {
+        text-align: center;
+    }
+
+    .btn-dark {
+        float: right;
+    }
+}
